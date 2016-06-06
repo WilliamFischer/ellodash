@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ello Uni</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke.css">
+	
+	<script type="text/javascript" src="js/java.js"></script>
+
+
+      
+</head>
+<body class="loginmain">
+
+<h1 class="logotitle">ello <i class="pe-7s-magnet" style="font-size: 35px;"></i>ni
+<br /><br />
+
+<label style="font-weight: 400; font-size: 50px">
+Welcome to<br />your university 
+</label>
+
+<br /><br />
+
+<label class="littletext">
+Chat . Trade . Buy . Sell . Live .</label>
+</h1>
+
+<div class="card">
+
+<i class="pe-7s-unlock lockicon"></i><br />
+
+<div class="cardtext">
+	<label style="color: #F33B3C">Sign Up</label> <br/ > Using your university email address
+</div>
+
+<form class="cardform" id="contactForm" method="post">
+	  <input type="email" name="Email" placeholder="Email" class="cardinput">
+	  <br>
+	  <input type="password" name="Password" placeholder="Password" class="cardinput" style="border-bottom: 1px solid #888;">
+
+	  <div class="wrap">
+		  <div class="box">
+		  <button class="cta" type="submit">
+		    <a>Join</a>
+		    <span class="shape">
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		    </span>
+		  </button>
+		  </div>
+		</div>
+
+</form>
+
+
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	$(".cta").mouseenter(function(){
+  $(this).addClass("active").delay(300).queue(function(next){
+    $(this).removeClass("active");
+    next();
+  });
+});
+</script>
+
+</body>
+</html>

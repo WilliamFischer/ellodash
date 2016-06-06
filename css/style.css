@@ -1,0 +1,494 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,600);
+
+.loginmain{
+ background: #282537;
+ background-image: -webkit-radial-gradient(center, circle cover, #F04949 0%, #F33B3C 80%);
+ background-image: -moz-radial-gradient(center, circle cover, #F68A6E 0%, #F37F5F 80%);
+ background-image: -o-radial-gradient(center, circle cover, #F68A6E 0%, #F37F5F 80%);
+ background-image: radial-gradient(center, circle cover, #F68A6E 0%, #F68A6E 80%);
+ height: 790px; 
+}
+
+.card{
+  background-color: #fff;
+  display: block;
+  height: 550px;
+  width: 450px;
+  float: right;
+  margin-right: 100px;
+  margin-top: 100px;
+  
+
+  -webkit-box-shadow: 0px 0px 41px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 41px -3px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 41px -3px rgba(0,0,0,0.75);
+}
+
+.cardtext{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  padding: 10%;
+
+  margin-top: 50px;
+}
+
+.lockicon{
+  color: #F33B3C;
+  font-size: 60px;
+  padding: 2.5%;
+  position: absolute;
+}
+
+.cardform{
+  padding: 10%;
+  padding-top: 1%;
+  border: none;
+  
+}
+
+.cardinput{
+  padding: 1%;
+  border: none;
+  border-top: 1px solid #888;
+  height: 60px; 
+  width: 100%; 
+  font-size: 20px; 
+  border-left: none; 
+  border-right: none;
+}
+
+.cardinput:focus{
+  outline: none;
+  
+}
+
+body{
+   font-family: 'Open Sans', sans-serif;
+}
+
+
+.wrap {
+  height: 60px;
+  position: relative;
+  margin-top: 13%;
+  transform: translateY(-50%);
+}
+
+.box {
+  padding: 1em;
+  height: 60px;
+  text-align: center;
+}
+
+button {
+  width: 160px;
+  border: none;
+  height: 60px;
+  background: #EF4747;
+  outline: none;
+  cursor:pointer;
+  position: relative;
+  border-radius:6px;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+/* let's shape */
+
+button span.shape {
+  height: 60px;
+  width: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+button span span {
+  content:"";
+  position: absolute;
+  margin: auto;
+  height: 8px;
+  width: 2px;
+  background: #EF4747;
+  opacity: 0;
+}
+
+button span span:nth-of-type(1) {
+  top: -10px;
+  left: 0;
+  right: 0;
+}
+
+button span span:nth-of-type(2) {
+  bottom: -10px;
+  left: 0;
+  right: 0;
+}
+
+button span span:nth-of-type(3) {
+  top:0;
+  bottom: 0;
+  left: -10px;
+}
+
+button span span:nth-of-type(4) {
+  top:0;
+  bottom: 0;
+  right: -10px;
+}
+
+button span span:nth-of-type(5) {
+  top: -20px;
+  left: -70%;
+  right: 0;
+  transform:rotate(-30deg);
+}
+
+button span span:nth-of-type(6) {
+  top: -20px;
+  left: 0;
+  right: -70%;
+  transform:rotate(30deg);
+}
+button span span:nth-of-type(7) {
+  bottom: -20px;
+  right: 0;
+  left: -70%;
+  transform:rotate(30deg);
+}
+button span span:nth-of-type(8) {
+  bottom: -20px;
+  left: 0;
+  right: -70%;
+  transform:rotate(-30deg);
+}
+
+
+
+/* let's animate this */
+
+@keyframes bounce {
+  0%{transform: scale(1);}
+  50%{transform: scale(1.1);}
+  100%{transform: scale(1);}
+}
+
+button.active {
+  animation: bounce 0.3s ease-out 1;
+}
+
+button.active span span:nth-of-type(1) {
+  animation: anim1 0.4s ease-out 1;
+}
+button.active span span:nth-of-type(2) {
+  animation: anim2 0.4s ease-out 1;
+}
+button.active span span:nth-of-type(3) {
+  animation: anim3 0.4s ease-out 1;
+}
+button.active span span:nth-of-type(4) {
+  animation: anim4 0.4s ease-out 1;
+}
+button.active span span:nth-of-type(5) {
+  animation: anim5 0.4s ease-out 1;
+}
+button.active span span:nth-of-type(6) {
+  animation: anim6 0.4s ease-out 1;
+}
+button.active span span:nth-of-type(7) {
+  animation: anim7 0.4s ease-out 1;
+}
+button.active span span:nth-of-type(8) {
+  animation: anim8 0.4s ease-out 1;
+}
+
+
+@keyframes anim1 {
+  0%{transform: scaleY(0.5);opacity: 0;}
+  50%{transform: translateY(-10px) scaleY(1.4); opacity: 1;}
+  100%{transform: translateY(-20px) scaleY(0.5);opacity: 0;}
+}
+@keyframes anim2 {
+  0%{transform: scaleY(1);opacity: 0;}
+  50%{transform: translateY(10px) scaleY(1.4); opacity: 1;}
+  100%{transform: translateY(20px) scaleY(0.5);opacity: 0;}
+}
+@keyframes anim3 {
+  0%{transform: rotate(90deg) scaleX(0.5);opacity: 0;}
+  50%{transform: rotate(90deg) translateY(10px) scaleX(1.4); opacity: 1;}
+  100%{transform: rotate(90deg) translateY(20px) scaleX(0.5);opacity: 0;}
+}
+@keyframes anim4 {
+  0%{transform: rotate(90deg) scaleX(0.5);opacity: 0;}
+  50%{transform: rotate(90deg) translateY(-10px) scaleX(1.4); opacity: 1;}
+  100%{transform: rotate(90deg) translateY(-20px) scaleX(0.5);opacity: 0;}
+}
+@keyframes anim5 {
+  0%{transform: rotate(-30deg) scaleY(0.5);opacity: 0;}
+  50%{transform: rotate(-30deg) translateY(-8px) scaleY(1.4); opacity: 1;}
+  100%{transform: rotate(-30deg) translateY(-16px) scaleY(0.5);opacity: 0;}
+}
+@keyframes anim6 {
+  0%{transform: rotate(30deg) scaleY(0.5);opacity: 0;}
+  50%{transform: rotate(30deg) translateY(-8px) scaleY(1.4); opacity: 1;}
+  100%{transform: rotate(30deg) translateY(-16px) scaleY(0.5);opacity: 0;}
+}
+@keyframes anim7 {
+  0%{transform: rotate(30deg) scaleY(0.5);opacity: 0;}
+  50%{transform: rotate(30deg) translateY(8px) scaleY(1.4); opacity: 1;}
+  100%{transform: rotate(30deg) translateY(16px) scaleY(0.5);opacity: 0;}
+}
+@keyframes anim8 {
+  0%{transform: rotate(-30deg) scaleY(0.5);opacity: 0;}
+  50%{transform: rotate(-30deg) translateY(8px) scaleY(1.4); opacity: 1;}
+  100%{transform: rotate(-30deg) translateY(16px) scaleY(0.5);opacity: 0;}
+}
+
+
+.logotitle{
+  position: absolute;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 10%;
+  margin-left: 25%;
+}
+
+.littletext{
+  font-weight: 300; 
+  font-size: 20px; 
+  max-width: 80%;
+  display: block;
+}
+
+.sidemenu{
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 8%;
+  margin-top: -.7%;
+  margin-left: -.7%;
+  background-color: #2B2C31;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dashmain{
+  background-color: #27272D;
+  height:100%; overflow:hidden;
+}
+
+.sidelist{
+  list-style: none;
+  max-width: 8%;
+
+}
+
+
+.sidelist li button{
+  background-color: #2B2C31;
+  border-radius: 0;
+   width: 120px;
+  height: 120px;
+  margin-left: -45px;
+  margin-top: -15px;
+  color: #6D6D70;
+
+}
+
+.sidelist i{
+  font-size: 30px;
+}
+
+.sidelist li .bottom{
+  margin-top: 50px;
+
+}
+
+.sidelist li button:active{
+  background-color: #F04848;
+  color: #fff;
+}
+
+.sidelist li button:focus{
+  background-color: #F04848;
+  color: #fff;
+}
+
+.mainbodybash{
+position: absolute;
+margin-left: 10%;
+
+}
+
+.mainbodybash h1{
+  color: #bbc3cd;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding-left: 50%;
+  padding-top: 10%;
+  font-size: 40px;
+}
+
+
+.search form {
+  width: 150px;
+  height: 36px;
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+}
+.search input[type="submit"]{
+  display: none !important;
+}
+.search input {
+  width: 100%;
+}
+.search input {
+  background: none;
+  border: 3px solid #3A3941;
+  border-radius: 26px;
+  box-sizing: border-box;
+  padding: 5px 15px 7px;
+  font-size: 14px;
+  color: #979DA6;
+  z-index: 2;
+  position: relative;
+}
+.search input:focus {
+  outline: none;
+}
+.search .after {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  z-index: 1;
+}
+.search form.open .after {
+ cursor: pointer;
+}
+
+.search{
+  margin-left: 150%;
+  margin-top: -35%;
+}
+.searchicon{
+  color: #3A3941;
+  margin-left: -30px;
+  margin-top: 5px;
+  position: absolute;
+}
+
+
+.chatmenu{
+   display: block;
+  position: absolute;
+  height: 100%;
+  width: 16%;
+  left: 85%;
+  float: right;
+  margin-top: -.7%;
+  background-color: #2B2C31;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chatmenulist{
+  list-style: none;
+  margin-top: 3px;
+  overflow: hidden;
+ 
+  height:400px;
+  width:215px;
+      
+  overflow-y:auto;
+  position:relative;
+  border-bottom: 4px solid #3A3941; 
+}
+
+.chatmenulist hr{
+  border: none;
+  height: 1px;
+  color: green;
+  margin: 0px;
+  width: 200%;
+  margin-left: -25%;
+  background-color: #3A3941;
+}
+
+.chatpic{
+  background-size: cover;
+  background-position: center;
+  display: block;
+  height: 80px;
+  width: 80px;
+  margin-left: -40px;
+  opacity:0.8;
+}
+
+.chatmenulist h2{
+  font-size: 90%;
+  position: absolute;
+  color: #bbc3cd;
+  margin-top: -30%;
+  width: 130%;
+  max-width: 50%;
+  margin-left: 21%;
+}
+
+.chatmenulist p{
+  font-size: 12px;
+  position: absolute;
+  word-wrap: break-word;
+  width: 45%;
+  max-height: 50px;
+  height: 50px;
+  overflow: hidden;
+  color: #bbc3cd;
+  margin-top: -22%;
+  margin-left: 21%;
+}
+
+.friendsearch{
+  width: 90%;
+  margin-left: 6px;
+
+   background: none;
+  border: 3px solid #3A3941;
+  box-sizing: border-box;
+  padding: 5px 15px 7px;
+  font-size: 14px;
+  color: #979DA6;
+  z-index: 2;
+  position: relative;
+}
+
+.friendsearch:focus {
+  outline: none;
+}
+
+.profilepicture{
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #3A3941;
+  margin-left: 25%;
+}
+
+.menutext{
+  font-size: 10px;
+  
+}
+
